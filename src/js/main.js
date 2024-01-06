@@ -1,7 +1,3 @@
-window.onbeforeunload = function () {
-	window.scrollTo(0, 0)
-}
-
 window.addEventListener('scroll', function () {
 	let scrollValue = window.scrollY
 	const aboutImg = document.querySelector('.about__img')
