@@ -75,6 +75,7 @@ function shadowFunction() {
 		body.style.overflow = 'visible'
 		body.style.overflowX = 'hidden'
 		pageWrapper.style.display = 'block'
+		bg.style.display = 'none'
 	}
 
 	loadText.innerText = `${load}%`
