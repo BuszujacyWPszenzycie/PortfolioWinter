@@ -1,0 +1,64 @@
+@media (min-width: 992px) {
+	.section {
+		&__title {
+			padding: 5rem;
+			font-size: 6rem;
+		}
+	}
+	// HEADER
+
+	.header {
+		&__top {
+			width: 900px;
+		}
+
+		&__icon {
+			font-size: 6rem;
+		}
+	}
+
+	// NAV
+
+	.nav {
+		&__item {
+			font-size: 2.3rem;
+			padding-left: 2.5rem;
+			padding-right: 2.5rem;
+		}
+	}
+
+	// ABOUT
+
+	.about {
+		&__subtitle {
+			margin-bottom: 10rem;
+		}
+		&__img {
+			width: 850px;
+		}
+
+		&__p {
+			font-size: 2.2rem;
+		}
+	}
+
+	// PORTFOLIO
+
+	.footer {
+		height: 400px;
+	}
+
+	.contact {
+		&__a {
+			padding: 1.8rem;
+			text-decoration: none;
+			color: $white;
+			font-size: 11rem;
+		}
+
+		&__details {
+			padding: 1.4rem;
+			font-size: 1.8rem;
+		}
+	}
+}

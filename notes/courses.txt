@@ -1,0 +1,51 @@
+
+        <div class="courses__wrapper">
+          <div class="courses__item courses__item--active">
+            <div class=" courses__img" style="background-image: url(./dist/img/courses_1.JPG);"></div>
+            <h3 class=" courses__name">MS EXCEL 2013 Advanced
+            </h3>
+          </div>
+
+          <div class="courses__item" style="background-image: url(./dist/img/courses_2.JPG);">
+            <h3 class=" courses__name">MS EXCEL 2013 Basic of VBA
+            </h3>
+          </div>
+
+          <div class="courses__item" style="background-image: url(./dist/img/courses_3.JPG);">
+            <h3 class=" courses__name">MS EXCEL 2013 Finance Functions
+            </h3>
+          </div>
+
+          <div class="courses__item" style="background-image: url(./dist/img/courses_4.JPG);">
+            <h3 class=" courses__name">PYTHON - intermediate
+            </h3>
+          </div>
+
+          <div class="courses__item" style="background-image: url(./dist/img/courses_5.JPG);">
+            <h3 class=" courses__name">Data Science: Data Analysis in PYTHON and PANDAS
+            </h3>
+          </div>
+
+
+          <div class="courses__item" style="background-image: url(./dist/img/courses_6.JPG);">
+            <h3 class=" courses__name">Power BI - from scratch to effective work
+            </h3>
+          </div>
+
+
+          <div class="courses__item" style="background-image: url(./dist/img/courses_7.JPG);">
+            <h3 class=" courses__name">Power BI - from scratch to effective work
+            </h3>
+          </div>
+
+
+          <div class="courses__item" style="background-image: url(./dist/img/courses_8.JPG);">
+            <h3 class=" courses__name">Creating Websites
+            </h3>
+          </div>
+
+          <div class="courses__item" style="background-image: url(./dist/img/courses_9.JPG);">
+            <h3 class=" courses__name">SLQ for beginners - PostgreSQL
+            </h3>
+          </div>
+        </div>

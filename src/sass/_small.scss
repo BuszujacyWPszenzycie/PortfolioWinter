@@ -1,0 +1,83 @@
+@media (min-width: 576px) {
+	.section {
+		&__title {
+			padding: 3rem;
+			font-size: 4rem;
+		}
+	}
+
+	// HEADER
+
+	.header {
+		&__icon {
+			font-size: 5rem;
+		}
+	}
+
+	// NAV
+
+	.nav {
+		margin-top: 2.5rem;
+
+		&__item {
+			font-size: 1.8rem;
+		}
+	}
+
+	// ABOUT
+
+	.about {
+		&__subtitle {
+			margin-bottom: 7rem;
+		}
+		&__img {
+			width: 500px;
+		}
+
+		&__p {
+			font-size: 1.7rem;
+		}
+
+		&__wrapper {
+			&--p {
+				margin-top: 7rem;
+			}
+		}
+	}
+
+	// PORTFOLIO
+
+	.portfolio {
+		&__item {
+			width: 450px;
+			height: 300px;
+		}
+	}
+
+	// COURSES
+
+	.courses {
+		&__item {
+			margin: 5rem;
+		}
+	}
+
+	// FOOTER
+	.footer {
+		height: 300px;
+	}
+
+	.contact {
+		&__a {
+			padding: 1.5rem;
+			text-decoration: none;
+			color: $white;
+			font-size: 7rem;
+		}
+
+		&__details {
+			padding: 1.2rem;
+			font-size: 1.5rem;
+		}
+	}
+}

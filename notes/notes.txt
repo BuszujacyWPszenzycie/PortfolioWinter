@@ -1,0 +1,111 @@
+        <div class="portfolio__wrapper">
+          <a href="https://buszujacywpszenzycie.github.io/ASEA-Biuro-Rachunkowe-Barbara-Szturminska/"
+            class="portfolio__link" target="_blank">
+            <div class="portfolio__item">
+              <div class="portfolio__item--title">ASEA</div>
+              <div class="portfolio__item--description portfolio__item--description">Company website of an
+                accounting office</div>
+            </div>
+          </a>
+
+          <a href="https://buszujacywpszenzycie.github.io/Harpagany_4/" class="portfolio__link" target="_blank">
+            <div class="portfolio__item">
+              <div class="portfolio__item--title">Harpagany</div>
+              <div class="portfolio__item--description">Website made for my
+                volleyball
+                team</div>
+            </div>
+          </a>
+
+          <a href="https://buszujacywpszenzycie.github.io/BeEco/" class="portfolio__link" target="_blank">
+            <div class="portfolio__item portfolio__item--gray">
+              <div class="portfolio__item--title">BeEco</div>
+              <div class="portfolio__item--description portfolio__item--description--orange">Beta version of website
+                helping with waste segregation</div>
+            </div>
+          </a>
+
+          <a href="https://buszujacywpszenzycie.github.io/DayAndNight/" class="portfolio__link" target="_blank">
+            <div class="portfolio__item portfolio__item--orange">
+              <div class="portfolio__item--title">Day and Night</div>
+              <div class="portfolio__item--description portfolio__item--description--gray">Button for dark mode</div>
+            </div>
+          </a>
+
+          <a href="https://buszujacywpszenzycie.github.io/VolleyballLevel_2/" class="portfolio__link" target="_blank">
+            <div class="portfolio__item portfolio__item--gray">
+              <div class="portfolio__item--title">Volleyball Level</div>
+              <div class="portfolio__item--description portfolio__item--description--orange">Application for measuring
+                how
+                good you are in volleball</div>
+            </div>
+          </a>
+
+          <a href="https://buszujacywpszenzycie.github.io/Portfolio-art/" class="portfolio__link" target="_blank">
+            <div class="portfolio__item portfolio__item--orange">
+              <div class="portfolio__item--title">Portfolio</div>
+              <div class="portfolio__item--description portfolio__item--description--gray">My first Portfolio page</div>
+            </div>
+          </a>
+
+          <a href="https://buszujacywpszenzycie.github.io/ToDo/" class="portfolio__link" target="_blank">
+            <div class="portfolio__item portfolio__item--gray">
+              <div class="portfolio__item--title">ToDo</div>
+              <div class="portfolio__item--description portfolio__item--description--orange">App for creating ToDo list
+              </div>
+            </div>
+          </a>
+
+        </div>
+
+
+.portfolio {
+	&__wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	&__link {
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	&__item {
+		width: 300px;
+		height: 300px;
+		border-radius: 20px;
+		margin: 3rem;
+		&:nth-child(odd) {
+			background-color: red;
+		}
+
+		&--gray {
+			background-color: $dark-grey;
+		}
+
+		&--orange {
+			background-color: $orange;
+		}
+
+		&--title {
+			color: $white;
+			font-size: 4rem;
+			padding: 2rem;
+		}
+
+		&--description {
+			font-size: 2rem;
+			padding: 2rem;
+
+			&--orange {
+				color: $orange;
+			}
+
+			&--gray {
+				color: $dark-grey;
+			}
+		}
+	}
+}
