@@ -1,4 +1,4 @@
-// Function for picture in About section
+// ABOUT
 
 window.addEventListener('scroll', function () {
 	let scrollValue = window.scrollY
@@ -11,7 +11,7 @@ window.addEventListener('scroll', function () {
 	}
 })
 
-// Function for items in Portfolio
+// PORTFOLIO
 
 window.addEventListener('scroll', function () {
 	const allPortfolioItems = document.querySelectorAll('.portfolio__item')
@@ -50,28 +50,32 @@ function checkItems() {
 	})
 }
 
-// COURSES - not used in final project, keep for future
+// LOADING PAGE
 
-// const section = document.querySelector('.courses')
-// const line = document.querySelector('.resizable-line')
-// const sectionHeight = section.offsetHeight
+const loadText = document.querySelector('.opening__counter')
+const bg = document.querySelector('.opening__bg')
+const body = document.querySelector('body')
 
-// window.addEventListener('scroll', function () {
-// 	const coursesItems = document.querySelectorAll('.courses__item')
-// 	const scrollPosition = window.scrollY + 500
-// 	const sectionTop = section.offsetTop
-// 	const sectionBottom = sectionTop + sectionHeight
-// 	const scrollPercentage = Math.max(0, Math.min((scrollPosition - sectionTop) / sectionHeight, 1))
-// 	const lineHeight = `${scrollPercentage * 100}%`
-// 	coursesItems.forEach(item => {
-// 		const itemPercenageHeight = item.offsetTop / sectionHeight
+let load = 0
 
-// 		if (itemPercenageHeight + 0.2 < scrollPercentage) {
-// 			item.style.transform = 'translateX(0px)'
-// 		} else {
-// 			item.style.transform = 'translateX(-2000px)'
-// 		}
-// 	})
+let int = setInterval(shadowFunction, 30)
 
-// 	line.style.height = lineHeight
-// })
+function shadowFunction() {
+	load++
+
+	if (load > 99) {
+		clearInterval(int)
+		body.style.overflow = 'visible'
+		body.style.overflowX = 'hidden'
+	}
+
+	loadText.innerText = `${load}%`
+	loadText.style.opacity = scale(load, 0, 100, 1, 0)
+	// bg.style.backgroundColor = `blur(${scale(load, 0, 100, 30, 0)}px)`
+	bg.style.backgroundColor = `rgba(0,0,0,${scale(load, 0, 100, 0.99, 0)})`
+}
+
+// https://stackoverflow.com/questions/10756313/javascript-jquery-map-a-range-of-numbers-to-another-range-of-numbers
+const scale = (num, in_min, in_max, out_min, out_max) => {
+	return ((num - in_min) * (out_max - out_min)) / (in_max - in_min) + out_min
+}

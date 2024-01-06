@@ -23,6 +23,8 @@ body {
 	flex-direction: column;
 	color: $black;
 	overflow-x: hidden;
+	position: relative;
+	overflow: hidden;
 }
 
 .page__wrapper {
@@ -42,6 +44,27 @@ body {
 	}
 }
 
+.opening {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+
+	&__bg {
+		background-color: rgba(0, 0, 0, 0.99);
+		z-index: 5;
+	}
+
+	&__counter {
+		font-size: 50px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		z-index: 6;
+		color: $white;
+	}
+}
 // HEADER
 
 .header {
