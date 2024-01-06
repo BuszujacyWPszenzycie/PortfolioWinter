@@ -1,3 +1,10 @@
+function scrollToTop() {
+	window.scrollTo(0, 0)
+}
+
+// Attach the function to the 'beforeunload' event
+window.addEventListener('beforeunload', scrollToTop)
+
 window.addEventListener('scroll', function () {
 	let scrollValue = window.scrollY
 	const aboutImg = document.querySelector('.about__img')
