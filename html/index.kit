@@ -6,6 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Marcin - Portfolio</title>
   <!-- @include 'styles.kit' -->
+  <script>
+    // Function to scroll to the top
+    function scrollToTop() {
+      window.scrollTo(0, 0);
+    }
+
+    // Attach the function to the 'beforeunload' event
+    window.addEventListener('beforeunload', scrollToTop);
+  </script>
 </head>
 
 <body>

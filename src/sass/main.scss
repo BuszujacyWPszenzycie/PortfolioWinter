@@ -29,6 +29,7 @@ body {
 
 .page__wrapper {
 	max-width: 1200px;
+	opacity: 1;
 }
 
 .section {
@@ -276,6 +277,7 @@ body {
 	justify-content: space-around;
 	align-items: center;
 	flex-direction: column;
+	opacity: 0;
 }
 
 .contact {

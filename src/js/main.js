@@ -1,4 +1,6 @@
-// ABOUT
+window.onbeforeunload = function () {
+	window.scrollTo(0, 0)
+}
 
 window.addEventListener('scroll', function () {
 	let scrollValue = window.scrollY
@@ -55,6 +57,8 @@ function checkItems() {
 const loadText = document.querySelector('.opening__counter')
 const bg = document.querySelector('.opening__bg')
 const body = document.querySelector('body')
+const pageWrapper = document.querySelector('.page__wrapper')
+const footer = document.querySelector('.footer')
 
 let load = 0
 
@@ -67,10 +71,13 @@ function shadowFunction() {
 		clearInterval(int)
 		body.style.overflow = 'visible'
 		body.style.overflowX = 'hidden'
+		pageWrapper.style.display = 'block'
 	}
 
 	loadText.innerText = `${load}%`
 	loadText.style.opacity = scale(load, 0, 100, 1, 0)
+	pageWrapper.style.opacity = scale(load, 0, 100, 0, 1)
+	footer.style.opacity = scale(load, 0, 100, 0, 1)
 	// bg.style.backgroundColor = `blur(${scale(load, 0, 100, 30, 0)}px)`
 	bg.style.backgroundColor = `rgba(0,0,0,${scale(load, 0, 100, 0.99, 0)})`
 }
