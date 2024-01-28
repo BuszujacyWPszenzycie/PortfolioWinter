@@ -1,9 +1,7 @@
-function scrollToTop() {
-	window.scrollTo(0, 0)
-}
-
-// Attach the function to the 'beforeunload' event
-window.addEventListener('beforeunload', scrollToTop)
+// function getScrollPosition() {
+// 	var scrollPosition = window.scrollY || window.pageYOffset
+// 	console.log('Scroll Position:', scrollPosition, 'pixels from the top')
+// }
 
 window.addEventListener('scroll', function () {
 	let scrollValue = window.scrollY
@@ -55,10 +53,21 @@ function checkItems() {
 	})
 }
 
+// DIV FROM THE TOP
+// const bg = document.querySelector('.opening')
+
+// function setTopDivPosition() {
+// 	let scrollPosition = window.scrollY
+// 	bg.style.top = scrollPosition + 'px'
+// 	console.log(bg.style.top)
+// }
+
+// setTopDivPosition()
+
 // LOADING PAGE
 
 const loadText = document.querySelector('.opening__counter')
-const bg = document.querySelector('.opening__bg')
+const bg = document.querySelector('.opening')
 const body = document.querySelector('body')
 const pageWrapper = document.querySelector('.page__wrapper')
 const footer = document.querySelector('.footer')
@@ -68,6 +77,9 @@ let load = 0
 let int = setInterval(shadowFunction, 30)
 
 function shadowFunction() {
+	let scrollPosition = window.scrollY
+	bg.style.top = scrollPosition + 'px'
+
 	load++
 
 	if (load > 99) {

@@ -25,6 +25,8 @@ body {
 	overflow-x: hidden;
 	position: relative;
 	overflow: hidden;
+	// background-color: rgba(0, 0, 0, 0.99);
+	// z-index: 5;
 }
 
 .page__wrapper {
@@ -49,13 +51,9 @@ body {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100vw;
-	height: 100vh;
-
-	&__bg {
-		background-color: rgba(0, 0, 0, 0.99);
-		// z-index: 5;
-	}
+	min-width: 100vw;
+	min-height: 100vh;
+	background-color: rgba(0, 0, 0, 0.99);
 
 	&__counter {
 		font-size: 50px;
@@ -218,6 +216,9 @@ body {
 		}
 		&:nth-child(8) {
 			background-image: url(../img/portfolio_8.JPG);
+		}
+		&:nth-child(9) {
+			background-image: url(../img/portfolio_9.JPG);
 		}
 	}
 }
